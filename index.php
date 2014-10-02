@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-	<title>xkcd Password Generator</title>
 	<meta charset='utf-8'>
-	
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
-
 	<link href='style.css' rel="stylesheet">
-	
+	<title>Project 2 | John Hamrick | CSCI E-15</title>
+
+				<?php require 'logic.php'; ?>
+
 </head>
 <body>
-
 
 	<div class='container'>
 		<h1>Password Generator</h1>
@@ -24,7 +22,7 @@
 			<p class='options'>
 			
 				<label for='number_of_words'># of Words</label>
-				<input maxlength=1 type='text' name='number_of_words' id='number_of_words' value=''>  (Max 7)
+				<input maxlength=1 type='text' name='number_of_words' id='number_of_words' value=''>  (Max 4)
 				<br>
 					
 				<input type='checkbox' name='add_number' id='add_number' > 
@@ -37,7 +35,7 @@
 			<input type='submit' class='btn btn-default' value='Gimme Another'>
 					
 		</form>
-		
+
 		<p class='details'>
 			<a href='http://xkcd.com/936/'>xkcd password strength</a><br>
 		
@@ -50,6 +48,6 @@
 	</div>
 	
 	<script src='//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js'></script>
-	
+
 </body>
 </html>
