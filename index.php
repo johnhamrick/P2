@@ -6,7 +6,7 @@
 	<link href='style.css' rel="stylesheet">
 	<title>Project 2 | John Hamrick | CSCI E-15</title>
 
-				<?php require 'logic.php'; ?>
+		<?php require 'logic.php'; ?>
 
 </head>
 <body>
@@ -33,7 +33,6 @@
 			</p>
 		
 			<input type='submit' class='btn btn-default' value='Gimme Another'>
-					
 		</form>
 
 		<p class='details'>
