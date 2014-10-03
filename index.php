@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+	
 	<meta charset='utf-8'>
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<link href='style.css' rel="stylesheet">
 	<title>Project 2 | John Hamrick | CSCI E-15</title>
 
 		<?php require 'logic.php'; ?>
+		<form method='POST' action='index.php'><br>
 
 </head>
 <body>
@@ -19,18 +21,12 @@
 			when-pay-weight-ruler		</p>
 		
 		<form>
-			<p class='options'>
+				<p class='options'>
 			
 				<label for='number_of_words'># of Words</label>
 				<input maxlength=1 type='text' name='number_of_words' id='number_of_words' value=''>  (Max 4)
 				<br>
-					
-				<input type='checkbox' name='add_number' id='add_number' > 
-				<label for='add_number'>Add a number</label>
-				<br>
-				<input type='checkbox' name='add_symbol' id='add_symbol' > 
-				<label for='add_symbol'>Add a symbol</label>
-			</p>
+		</p>
 		
 			<input type='submit' class='btn btn-default' value='Gimme Another'>
 		</form>
@@ -50,3 +46,4 @@
 
 </body>
 </html>
+
