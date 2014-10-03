@@ -28,6 +28,8 @@ php require
 			
 				<label for='numWords'># of Words</label>
 				<input name="numWords" type="number" min="1" max="4" required="required"/>(Max 4)<br>
+				<label for='maxLength'>Max Length</label>
+				<input name="maxLength" type="number" min="3" max="8" required="required"/>(Max 8)<br>
 				<br>
 		</p>
 		
