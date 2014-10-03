@@ -10,8 +10,6 @@
 <?
 php require
 'logic.php';
-php echo
-$password;
 ?>
 
 </head>
@@ -20,7 +18,7 @@ $password;
 		<h1>Password Generator</h1>
 		<h2>ala The xkcd Comic Strip</h2>
 
-	<p class='password'> when-pay-weight-ruler</p>
+		<p class='password'> <?php echo $password ?></p>
 
 		<form method='POST' action='index.php'><br>
 			<p class='options'>
