@@ -7,32 +7,34 @@
 	<link href='style.css' rel="stylesheet">
 	<title>Project 2 | John Hamrick | CSCI E-15</title>
 
-		<?
+<?
 php require
 'logic.php';
+echo rand(0, 9);
+print_r($_POST);
 ?>
 
 </head>
 <body>
-
 	<div class='container'>
 		<h1>Password Generator</h1>
 		<h2>ala The xkcd Comic Strip</h2>
 	
 		<p class='password'>
-			when-pay-weight-ruler		</p>
-		
-		<form method='POST' action='index.php'><br>
+			when-pay-weight-ruler</p>
 
-				<p class='options'>
-			
+		<form method='POST' action='index.php'><br>
+			<p class='options'>
+
 				<label for='numWords'># of Words</label>
-				<input name="numWords" type="number" min="1" max="4" required="required"/>(Max 4)<br>
-				<label for='maxLength'>Max Length</label>
-				<input name="maxLength" type="number" min="3" max="8" required="required"/>(Max 8)<br>
+				<input name='numWords' type='number' min='1' max='4' required='required'/>(Max 4)<br>
 				<br>
-		</p>
-		
+				<input name='add_number' type='checkbox' id='add_number'>
+				<label for='add_number'>Add a number</label><br>
+				<input name='add_symbol' type='checkbox' id='add_symbol'>
+				<label for='add_symbol'>Add a symbol</label><br>
+
+			</p>
 			<input type='submit' class='btn btn-default' value='Gimme Another'>
 		</form>
 
@@ -51,4 +53,6 @@ php require
 
 </body>
 </html>
+
+
 
