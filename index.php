@@ -26,8 +26,8 @@ php require
 
 				<p class='options'>
 			
-				<label for='number_of_words'># of Words</label>
-				<input maxlength=1 type='text' name='number_of_words' id='number_of_words' value=''> (Max 4)
+				<label for='numWords'># of Words</label>
+				<input name="numWords" type="number" min="1" max="4" required="required"/>(Max 4)<br>
 				<br>
 		</p>
 		
