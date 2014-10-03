@@ -12,7 +12,6 @@ php require
 'logic.php';
 echo rand(0, 9);
 echo rand($symbolArray);
-print_r($password);
 ?>
 
 </head>
@@ -20,9 +19,8 @@ print_r($password);
 	<div class='container'>
 		<h1>Password Generator</h1>
 		<h2>ala The xkcd Comic Strip</h2>
-	
-		<p class='password'>
-			when-pay-weight-ruler</p>
+
+	<p class='password'> when-pay-weight-ruler</p>
 
 		<form method='POST' action='index.php'><br>
 			<p class='options'>
@@ -30,13 +28,13 @@ print_r($password);
 				<label for='numWords'># of Words</label>
 				<input name='numWords' type='number' min='1' max='4' required='required'/>(Max 4)<br>
 				<br>
-				<input name='add_number' type='checkbox' id='add_number'>
+				<input name='add_number' type='checkbox' id='add_number' value = '1'>
 				<label for='add_number'>Add a number</label><br>
-				<input name='add_symbol' type='checkbox' id='add_symbol'>
+				<input name='add_symbol' type='checkbox' id='add_symbol' value = '1'>
 				<label for='add_symbol'>Add a symbol</label><br>
 
 			</p>
-			<input type='submit' class='btn btn-default' value='Gimme Another'>
+			<input type='submit' class='btn btn-default' value='Generate'>
 		</form>
 
 		<p class='details'>
@@ -52,8 +50,14 @@ print_r($password);
 	
 	<script src='//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js'></script>
 
+<?
+php echo
+$password
+?>
+
 </body>
 </html>
+
 
 
 
