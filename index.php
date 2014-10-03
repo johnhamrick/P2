@@ -10,8 +10,8 @@
 <?
 php require
 'logic.php';
-echo rand(0, 9);
-echo rand($symbolArray);
+php echo
+$password;
 ?>
 
 </head>
@@ -49,11 +49,6 @@ echo rand($symbolArray);
 	</div>
 	
 	<script src='//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js'></script>
-
-<?
-php echo
-$password
-?>
 
 </body>
 </html>
