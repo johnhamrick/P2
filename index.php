@@ -7,8 +7,10 @@
 	<link href='style.css' rel="stylesheet">
 	<title>Project 2 | John Hamrick | CSCI E-15</title>
 
-		<?php require 'logic.php'; ?>
-		<form method='POST' action='index.php'><br>
+		<?
+php require
+'logic.php';
+?>
 
 </head>
 <body>
@@ -20,11 +22,12 @@
 		<p class='password'>
 			when-pay-weight-ruler		</p>
 		
-		<form>
+		<form method='POST' action='index.php'><br>
+
 				<p class='options'>
 			
 				<label for='number_of_words'># of Words</label>
-				<input maxlength=1 type='text' name='number_of_words' id='number_of_words' value=''>  (Max 4)
+				<input maxlength=1 type='text' name='number_of_words' id='number_of_words' value=''> (Max 4)
 				<br>
 		</p>
 		
