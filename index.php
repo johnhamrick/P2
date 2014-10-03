@@ -11,7 +11,8 @@
 php require
 'logic.php';
 echo rand(0, 9);
-print_r($_POST);
+echo rand($symbolArray);
+print_r($password);
 ?>
 
 </head>
