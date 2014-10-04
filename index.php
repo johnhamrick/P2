@@ -1,3 +1,8 @@
+<?php
+error_reporting(-1); # Report all PHP errors
+ini_set('display_errors', 1);
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,13 +19,13 @@
 		<h1>Password Generator</h1>
 		<h2>ala The xkcd Comic Strip</h2>
 
-	<p class='password'><?php echo $newPassword= "" ?></p>
+	<p class='password'><?php echo $newPassword ?></p>
 
 		<form method='POST' action='index.php'><br>
 			<p class='options'>
 
 				<label for='numWords'># of Words</label>
-				<input name='numWords' type='number' min='1' max='4' required='required' id = 'numWords'/>(Max 4)<br>
+				<input name='numWords' type='number' min='1' max='4' required='required' id = "numWords"/>(Max 4)<br>
 				<br>
 				<input name='add_number' type='checkbox' id='add_number' value = '1'>
 				<label for='add_number'>Add a number</label><br>
